@@ -286,52 +286,52 @@ footer {
 }
 
 .form-popup {
-    z-index: 8; /* This z-index ensures the contact form shows above all other elements on the page */
-    display: none; /* Set the display to none, we will use JavaScript to show the contact form */
-    position: fixed; /* The form stays in the same location no matter what */
-    bottom: .5vw; /* Slightly up from the bottom of the viewport */
-    right: .5vw; /* Slightly in from the right side of the viewport */
+    z-index: 8;
+    display: none;
+    position: fixed;
+    bottom: .5vw;
+    right: .5vw;
 }
 
 .form-container {
-    max-width: 49vw; /* Relative sizing of the form container - 49% of the viewport width */
-    padding: 1vw; /* Adds padding between the form-popup and the form-container */
+    max-width: 49vw;
+    padding: 1vw;
     background-color: white; 
 }
 
 .form-container input[type=text] {
-    width: 100%; /* The input boxes completely fill the width of the form-container */
-    padding: .93vw; /* Adds padding to the input boxes */
-    margin: .6vw 0 .6vw 0; /* Adds space between the input boxes and the labels */
-    border: none; /* Removes the border from the input boxes */
-    background: Gainsboro; /* Sets the background color of the input boxes */
-    font-size: 1vw; /* Relative font sizing based on the width of the viewport */
+    width: 100%;
+    padding: .93vw;
+    margin: .6vw 0 .6vw 0;
+    border: none;
+    background: Gainsboro;
+    font-size: 1vw;
 }
 
 button {
     font-family: "Trebuchet MS", Optima;
-    letter-spacing: .3vw; /* Adds slight spacing between the letters */
-    font-size: 1.5vw; /* Relative sizing of text */
+    letter-spacing: .3vw;
+    font-size: 1.5vw;
     font-weight: bold; 
-    padding: 1.5vw; /* Adds padding to the text in the button */
-    cursor: pointer; /* Changes the cursor to pointer over button elements */
-    width: 100%; /* Sets the width of the buttons to 100% of their containers */
-    height: auto; /* Allows the height to be resized depending on the content showing */
+    padding: 1.5vw;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
 }
 
 button:hover, .form-container .btn:hover {
-    color: white; /* This makes the text in the buttons white when hovered over */
-    background-color: black; /* The background of the button changes to black when hovered over */
-    transition-duration: 1s; /* This makes the transition last 1 second */
-    -webkit-transition-duration: 1s; /* For Safari 4.0-8.0 */
-    border-color: silver; /* The border turns silver when the button is hovered over */
+    color: white;
+    background-color: black;
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    border-color: silver;
 }
 
 .form-container .btn {
     background-color: white; 
     color: black;
     border-color: black;
-    margin-bottom: 1vh; /* Adds space between the submit button and the close button */
+    margin-bottom: 1vh;
 }
 
 .form-container .cancel {
@@ -403,16 +403,13 @@ button:hover, .form-container .btn:hover {
     }
 }
 
-/*Media rule for navbar links for different screen sizes*/
-/* Screens 1080px and smaller will display navbar links equally distributed */
 @media screen and (max-width: 1080px) {
     .Navbar a{
-        width: 20%; /* This sets each navbar link to 1/5 of the navbar */
+        width: 20%;
         font-size: 2.5vw;
     }
 }
 
-/* Media rules to enlarge the font of the white text for smaller screens */
 @media screen and (max-width: 1080px) {
     .quote{
         font-size: 3.5vw;
@@ -423,7 +420,6 @@ button:hover, .form-container .btn:hover {
     }
 }
 
-/* Media rules to increase the size of the columns for larger screens */
 @media screen and (min-width: 1725px) {
     .Column_1 {
         height: 550px;
@@ -434,10 +430,9 @@ button:hover, .form-container .btn:hover {
 }
 
 
-/*Media rule to remove margin-top from h1 elements for extra large screens (so that the paragraph text fits in the column*/
+
 @media screen and (min-width: 2000px) {
     h1{
         margin-top: 0;
     }
 }
-/***** End of Media Query Section *****/
